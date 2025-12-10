@@ -102,9 +102,9 @@ When searching with keyword, pervious site's result may contain the items in oth
 
 | Test Case ID | Description | Preconditions | Test Steps | Expected Result | Status (Pass/Fail) | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **USER-01** | Password Reset | A user account exists | 1. On the login page, click "Forgot Password"<br>2. Enter the account's email<br>3. Check email and follow the reset link<br>4. Set a new password | Password reset email is sent. User can log in with the new password | | Test email content and link expiry |
-| **USER-02** | View/Edit User Profile | User is logged in | 1. Click on the user's profile name<br>2. Navigate to "Profile"<br>3. Edit information (e.g., phone number) and save | Changes are saved successfully | | |
-| **USER-03** | View Submission History | User has made submissions | 1. Log in<br>2. Navigate to "My Submissions" or similar section | User can see all their submissions with current status (in progress, waiting review, published, etc.) | | |
+| **USER-01** | Password Reset | A user account exists | 1. On the login page, click "Forgot Password"<br>2. Enter the account's email<br>3. Check email and follow the reset link<br>4. Set a new password | Password reset email is sent. User can log in with the new password | **Failed** | When input the registered email in the "forget password" page, pop-up window shows: "Error when trying to reset password An error occurred when attempting to reset the password for the account associated with the following email address: swang133@lakeheadu.ca " However, if input a non-registered email address, it will show "an email to reset password has been sent to [email address].", though the non-registered email account does not receive the email.Test email content and link expiry |
+| **USER-02** | View/Edit User Profile | User is logged in | 1. Click on the user's profile name<br>2. Navigate to "Profile"<br>3. Edit information (e.g., phone number) and save | Changes are saved successfully | Pass | Changed name, telephone and language, saved successfully |
+| **USER-03** | View Submission History | User has made submissions | 1. Log in<br>2. Navigate to "My Submissions" or similar section | User can see all their submissions with current status (in progress, waiting review, published, etc.) | Pass | Under User-MyKnowledgeCommins, past submissions and workflows are listed |
 
 ### **Module 5: System & Integration**
 
