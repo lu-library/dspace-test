@@ -1,11 +1,27 @@
 # **Failed Test Cases – Action Required**
 
-### 1. USER-01 - Password Reset
+### 1. Missing metadata field for ETD-MS List of Records (View details in Edit mode, or refer to [here](/dspace-test-2.png) )
+<description>...</description>
+***<publisher>Lakehead University</publisher>***
+<date>...</date>
+
+<language>...</language>
+***<degree>
+      <name>Master of ...</name>
+      <level>Master</level>
+      <discipline>...</discipline>
+      <grantor>Lakehead University</grantor>
+</degree>
+  <identifier>TC-OPAL-...</identifier>
+  <identifier>https://knowledgecommons.lakeheadu.ca/bitstream/2453/.../1/....pdf</identifier>
+  <format>application/pdf</format>***
+
+### 2.  USER-01 - Password Reset: Reviewed on 25.12.12, can be ignored due to same credential with Lakehead Email.
 When entering a registered email on the “Forgot Password” page, the system displays an error pop-up:
 “Error when trying to reset password. An error occurred when attempting to reset the password for the account associated with the following email address: xxx@lakeheadu.ca.”<br>
 However, when entering a non-registered email, the system incorrectly displays: “An email to reset password has been sent to [email address].” (No email is actually received)
 
-### 2. OAI-01 - Identify Verb
+### 2. OAI-01 - Identify Verb: Reviewed on 25.12.12
 Test passed, but the E-Mail Contact field shows dspace-help@myu.edu instead of our institutional email address.
 
 # Not Tested (No Access or Not Applicable)
